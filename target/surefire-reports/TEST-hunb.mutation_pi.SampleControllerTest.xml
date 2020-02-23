@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="hunb.mutation_pi.SampleControllerTest" time="0.048" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="hunb.mutation_pi.SampleControllerTest" time="0.064" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="HU"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-12.0.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\nagyb2\AppData\Local\Temp\surefire6448900132600265378\surefirebooter7670567773272285058.jar C:\Users\nagyb2\AppData\Local\Temp\surefire6448900132600265378 2020-02-23T21-06-21_215-jvmRun1 surefire17692005326135783168tmp surefire_012978517487138469109tmp"/>
+    <property name="sun.java.command" value="C:\Users\nagyb2\AppData\Local\Temp\surefire5783455247792800681\surefirebooter17426406763433350958.jar C:\Users\nagyb2\AppData\Local\Temp\surefire5783455247792800681 2020-02-23T21-35-45_753-jvmRun1 surefire1402012661437185978tmp surefire_014869582386093162408tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\nagyb2\eclipse-workspace\mutation_pi\target\test-classes;C:\Users\nagyb2\eclipse-workspace\mutation_pi\target\classes;C:\Users\nagyb2\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.5.2\junit-jupiter-engine-5.5.2.jar;C:\Users\nagyb2\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-engine\1.5.2\junit-platform-engine-1.5.2.jar;C:\Users\nagyb2\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-commons\1.5.2\junit-platform-commons-1.5.2.jar;C:\Users\nagyb2\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.5.2\junit-jupiter-api-5.5.2.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-runner\1.5.2\junit-platform-runner-1.5.2.jar;C:\Users\nagyb2\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\nagyb2\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-launcher\1.5.2\junit-platform-launcher-1.5.2.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-suite-api\1.5.2\junit-platform-suite-api-1.5.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\nagyb2\AppData\Local\Temp\surefire6448900132600265378\surefirebooter7670567773272285058.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\nagyb2\AppData\Local\Temp\surefire5783455247792800681\surefirebooter17426406763433350958.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="12.0.1+12"/>
@@ -58,12 +58,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="56.0"/>
   </properties>
-  <testcase name="nullResult1" classname="hunb.mutation_pi.SampleControllerTest" time="0.032"/>
-  <testcase name="nullResult2" classname="hunb.mutation_pi.SampleControllerTest" time="0"/>
-  <testcase name="negativResult1" classname="hunb.mutation_pi.SampleControllerTest" time="0"/>
-  <testcase name="negativResult2" classname="hunb.mutation_pi.SampleControllerTest" time="0"/>
-  <testcase name="positivResult1" classname="hunb.mutation_pi.SampleControllerTest" time="0"/>
-  <testcase name="positivResult2" classname="hunb.mutation_pi.SampleControllerTest" time="0"/>
-  <testcase name="positivResult3" classname="hunb.mutation_pi.SampleControllerTest" time="0"/>
-  <testcase name="positivResult4" classname="hunb.mutation_pi.SampleControllerTest" time="0"/>
+  <testcase name="zeroResult1" classname="hunb.mutation_pi.SampleControllerTest" time="0.029"/>
+  <testcase name="zeroResult2" classname="hunb.mutation_pi.SampleControllerTest" time="0"/>
+  <testcase name="positiveResult1" classname="hunb.mutation_pi.SampleControllerTest" time="0.001"/>
+  <testcase name="positiveResult2" classname="hunb.mutation_pi.SampleControllerTest" time="0"/>
+  <testcase name="positiveResult3" classname="hunb.mutation_pi.SampleControllerTest" time="0"/>
+  <testcase name="positiveResult4" classname="hunb.mutation_pi.SampleControllerTest" time="0"/>
+  <testcase name="negativeResult1" classname="hunb.mutation_pi.SampleControllerTest" time="0"/>
+  <testcase name="negativeResult2" classname="hunb.mutation_pi.SampleControllerTest" time="0"/>
 </testsuite>

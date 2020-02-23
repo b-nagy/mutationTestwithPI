@@ -9,49 +9,49 @@ public class SampleControllerTest {
 
 	@DisplayName("Test negative result 1")
 	@Test
-	public void negativResult1() {
+	public void negativeResult1() {
 		assertEquals(-1, new SampleController().sampleLogic(1, 0));
 	}
 	
 	@DisplayName("Test negative result 2")
 	@Test
-	public void negativResult2() {
+	public void negativeResult2() {
 		assertEquals(-2, new SampleController().sampleLogic(1, 1));
 	}
 	
 	@DisplayName("Test positive result 1")
 	@Test
-	public void positivResult1() {
+	public void positiveResult1() {
 		assertEquals(2, new SampleController().sampleLogic(2, 0));
 	}
 	
 	@DisplayName("Test positive result 2")
 	@Test
-	public void positivResult2() {
+	public void positiveResult2() {
 		assertEquals(1, new SampleController().sampleLogic(0, -1));
 	}
 	
 	@DisplayName("Test positive result 3")
 	@Test
-	public void positivResult3() {
+	public void positiveResult3() {
 		assertEquals(1, new SampleController().sampleLogic(-1, 0));
 	}
 	
 	@DisplayName("Test positive result 4")
 	@Test
-	public void positivResult4() {
+	public void positiveResult4() {
 		assertEquals(2, new SampleController().sampleLogic(-1, -1));
 	}
 	
-	@DisplayName("Test null result 1")
+	@DisplayName("Test zero result 1")
 	@Test
-	public void nullResult1() {
+	public void zeroResult1() {
 		assertEquals(0, new SampleController().sampleLogic(0, 0));
 	}
 	
-	@DisplayName("Test null result 2")
+	@DisplayName("Test zeero result 2")
 	@Test
-	public void nullResult2() {
+	public void zeroResult2() {
 		assertEquals(0, new SampleController().sampleLogic(1, -1));
 	}
 	
