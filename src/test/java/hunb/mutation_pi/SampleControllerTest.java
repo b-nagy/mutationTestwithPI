@@ -37,12 +37,6 @@ public class SampleControllerTest {
 		assertEquals(1, new SampleController().sampleLogic(-1, 0));
 	}
 	
-	@DisplayName("Test positive result 4")
-	@Test
-	public void positiveResult4() {
-		assertEquals(2, new SampleController().sampleLogic(-1, -1));
-	}
-	
 	@DisplayName("Test zero result 1")
 	@Test
 	public void zeroResult1() {
@@ -55,4 +49,9 @@ public class SampleControllerTest {
 		assertEquals(0, new SampleController().sampleLogic(1, -1));
 	}
 	
+	@DisplayName("what is the 8. ?")
+	@Test
+	public void guess() {
+		assertEquals(-1, new SampleController().sampleLogic(0, -1));
+	}
 }
