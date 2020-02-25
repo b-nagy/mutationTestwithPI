@@ -43,7 +43,7 @@ public class SampleControllerTest {
 		assertEquals(0, new SampleController().sampleLogic(0, 0));
 	}
 	
-	@DisplayName("Test zeero result 2")
+	@DisplayName("Test zero result 2")
 	@Test
 	public void zeroResult2() {
 		assertEquals(0, new SampleController().sampleLogic(1, -1));
@@ -52,6 +52,6 @@ public class SampleControllerTest {
 	@DisplayName("what is the 8. ?")
 	@Test
 	public void guess() {
-		assertEquals(-1, new SampleController().sampleLogic(0, -1));
+		assertEquals(1, new SampleController().sampleLogic(0, -1));
 	}
 }

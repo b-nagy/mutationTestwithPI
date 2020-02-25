@@ -1,2 +1,4 @@
-hunb\mutation_pi\SampleController2Test.class
+hunb\mutation_pi\ControllerIntegrationTest.class
+hunb\mutation_pi\HumanTest.class
 hunb\mutation_pi\SampleControllerTest.class
+hunb\mutation_pi\SampleController2Test.class

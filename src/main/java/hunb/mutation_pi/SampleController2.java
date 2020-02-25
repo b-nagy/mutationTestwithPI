@@ -9,5 +9,6 @@ public class SampleController2 {
 		returnMessage = ( (a % 2) == 0 ) ?  "HELLO!" : "GOOD BYE!";
 		
 		return returnMessage;
+		
 	}
 }
