@@ -26,18 +26,33 @@ public class Human {
 		return name;
 	}
 	
-	public String howOldAreYou() {
+	public String howOldAreYou() {	
+		if(age < 0 ) { return "I was not born.";}
+		if(age == 0 ) { return "I'm now being born.";}
+		if(age <= 11 && age >= 1) { return "I'm a child."; }
+		if(age <= 17 && age >= 12) { return "I'm a young."; }
+		if(age <= 39 && age >= 18) { return "I'm middle aged."; }
+		if(age <= 59 && age >= 40) { return "I'm old."; }
+		return "I'm older."; 	
+	}
+	
+	public String greeting(String voice) {
 		
-		String answer = "";
+		String backGreeting = (
+				(voice.toLowerCase().contains("hi")
+				||
+				voice.toLowerCase().contains("hello"))
+				&& 
+				voice.contains(this.name)) ? "Hello!" : "no answer";
 		
-		if(age <= -1 ) { answer = "I was not born.";}
-		if(age == 0 ) { answer = "I'm now being born.";}
-		if(age <= 11 && age >= 1) { answer = "I'm a child."; }
-		if(age <= 17 && age >= 12) { answer = "I'm a young."; }
-		if(age <= 39 && age >= 18) { answer = "I'm middle aged."; }
-		if(age <= 59 && age >= 40) { answer = "I'm old."; }
-		if(age > 59) { answer = "I'm older."; }
+		if(backGreeting.equals("no answer")) {	
+			backGreeting = (voice.equals(this.name + "?")) ? "Yes, i'm!" : "no answer";
+		}
+		if(backGreeting.equals("no answer")) {
+			backGreeting = (voice.equals(this.name + "!")) ? "Yes, sir!" : "no answer";
+		}
 		
-		return answer;
+		
+		return backGreeting;
 	}
 }

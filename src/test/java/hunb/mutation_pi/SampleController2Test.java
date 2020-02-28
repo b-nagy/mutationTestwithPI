@@ -9,9 +9,12 @@ public class SampleController2Test {
 	
 	@DisplayName("Say : HELLO!")
 	@Test
-	public void sayHello() {
+	public void sayHello1() {
 		String message = new SampleController2().message(0);
 		assertEquals(message, "HELLO!");
+		
+		String message2 = new SampleController2().message(2);
+		assertEquals(message2, "HELLO!");
 	}
 	
 	@DisplayName("Say : GOOD BYE!")
@@ -19,12 +22,6 @@ public class SampleController2Test {
 	public void sayGoodBye1() {
 		String message = new SampleController2().message(1);
 		assertEquals(message, "GOOD BYE!");
-	}
-	
-	@Test
-	public void sayAll() {
-		String message2 = new SampleController2().message(2);
-		assertEquals(message2, "HELLO!");
 	}
 
 }

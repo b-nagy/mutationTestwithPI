@@ -8,7 +8,9 @@ public class SampleController {
 		
 		if(a < 2 && a + b != 0) {
 			
-			result = (a + b) * -1;
+			//result = (a + b) * -1;
+			
+			result = Math.negateExact((a + b));
 			
 		} else {
 			

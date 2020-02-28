@@ -16,14 +16,14 @@ public class HumanTest {
 		assertEquals(12, Viki.getAge());
 	}
 	
-	@DisplayName("One year older")
-	@Test
-	public void setAgeTest() {
-		Viki.setAge(13);
-		assertEquals(13, Viki.getAge());
-	}
+//	@DisplayName("Change age")
+//	@Test
+//	public void setAgeTest() {
+//		Viki.setAge(13);
+//		assertEquals(13, Viki.getAge());
+//	}
 	
-	@DisplayName("changed name")
+	@DisplayName("Change name")
 	@Test
 	public void setNameTest() {
 		Viki.setName("Viktória");
@@ -86,4 +86,31 @@ public class HumanTest {
 		Viki.setAge(60);
 		assertEquals("I'm older.", Viki.howOldAreYou());
 	}
+	
+	@DisplayName("Greeting: Hello!")
+	@Test
+	public void greetingHello() {	
+		assertEquals("Hello!", Viki.greeting("Hello Viki!"));
+		assertEquals("Hello!", Viki.greeting("Hi! how are you Viki?"));		
+	}
+	
+	@DisplayName("Greeting: Yes, i'm!")
+	@Test
+	public void greetingIm() {	
+		assertEquals("Yes, i'm!", Viki.greeting("Viki?"));
+	}
+	
+	@DisplayName("Greeting: Yes, sir!")
+	@Test
+	public void greetingImSir() {	
+		assertEquals("Yes, sir!", Viki.greeting("Viki!"));
+	}
+	
+	@DisplayName("Greeting: no answer")
+	@Test
+	public void noAnswer() {	
+		assertEquals("no answer", Viki.greeting("Hello!"));
+		assertEquals("no answer", Viki.greeting("hi!?"));
+	}
+	
 }

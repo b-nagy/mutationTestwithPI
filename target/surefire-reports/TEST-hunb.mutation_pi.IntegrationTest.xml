@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="hunb.mutation_pi.ControllerIntegrationTest" time="0.038" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="hunb.mutation_pi.IntegrationTest" time="0" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="HU"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-12.0.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\nagyb2\AppData\Local\Temp\surefire17217964787410515326\surefirebooter18328746521885217723.jar C:\Users\nagyb2\AppData\Local\Temp\surefire17217964787410515326 2020-02-25T09-26-50_145-jvmRun1 surefire2785695350622294317tmp surefire_0530879512522726791tmp"/>
+    <property name="sun.java.command" value="C:\Users\nagyb2\AppData\Local\Temp\surefire15004267003543116476\surefirebooter8616598257329265207.jar C:\Users\nagyb2\AppData\Local\Temp\surefire15004267003543116476 2020-02-28T09-50-54_353-jvmRun1 surefire4101747923049278296tmp surefire_012439900692479081345tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\nagyb2\eclipse-workspace\mutation_pi\target\test-classes;C:\Users\nagyb2\eclipse-workspace\mutation_pi\target\classes;C:\Users\nagyb2\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.5.2\junit-jupiter-engine-5.5.2.jar;C:\Users\nagyb2\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-engine\1.5.2\junit-platform-engine-1.5.2.jar;C:\Users\nagyb2\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-commons\1.5.2\junit-platform-commons-1.5.2.jar;C:\Users\nagyb2\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.5.2\junit-jupiter-api-5.5.2.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-runner\1.5.2\junit-platform-runner-1.5.2.jar;C:\Users\nagyb2\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\nagyb2\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-launcher\1.5.2\junit-platform-launcher-1.5.2.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-suite-api\1.5.2\junit-platform-suite-api-1.5.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\nagyb2\AppData\Local\Temp\surefire17217964787410515326\surefirebooter18328746521885217723.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\nagyb2\AppData\Local\Temp\surefire15004267003543116476\surefirebooter8616598257329265207.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="12.0.1+12"/>
@@ -58,6 +58,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="56.0"/>
   </properties>
-  <testcase name="intTestSayHello" classname="hunb.mutation_pi.ControllerIntegrationTest" time="0.025"/>
-  <testcase name="intTestSayGoodBye" classname="hunb.mutation_pi.ControllerIntegrationTest" time="0"/>
+  <testcase name="newHumanWithSampleController" classname="hunb.mutation_pi.IntegrationTest" time="0"/>
 </testsuite>
