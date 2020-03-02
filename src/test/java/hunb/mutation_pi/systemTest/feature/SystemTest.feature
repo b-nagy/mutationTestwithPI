@@ -7,3 +7,5 @@ Jellemző: Csoport kezelés
 	Adott egy üres csoport
 	Amennyiben hozzáadok egy főt
 	Akkor a csoport létszáma egy
+	
+	
