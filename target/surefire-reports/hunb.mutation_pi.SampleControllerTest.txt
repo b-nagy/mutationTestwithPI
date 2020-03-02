@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: hunb.mutation_pi.SampleControllerTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in hunb.mutation_pi.SampleControllerTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in hunb.mutation_pi.SampleControllerTest
