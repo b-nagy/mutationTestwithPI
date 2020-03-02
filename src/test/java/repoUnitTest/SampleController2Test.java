@@ -1,7 +1,9 @@
-package hunb.mutation_pi;
+package repoUnitTest;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+
+import hunb.mutation_pi.SampleController2;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

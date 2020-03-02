@@ -1,14 +1,18 @@
 package hunb.mutation_pi.systemTest.groupSearchFeature;
 
-import hunb.mutation_pi.Integrataion;
+import hunb.mutation_pi.*;
 import io.cucumber.java.hu.*;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.*;
 
 public class GroupSearchSteps {
 
 	Integrataion group;
 	
+	@BeforeEach
+	@Test
 	@Adott("egy öt fős csoport")
 	public void newGroupWithThreePerson() {
 		group = new Integrataion();
@@ -19,12 +23,9 @@ public class GroupSearchSteps {
 		assertEquals("The group size is: 5", group.newHuman(15, 0, "Mike"));
 	}
 	
-	public String name;
-	public int age;
 	@Amennyiben("a csoport második tagját keresem")
 	public void searchId_2() {
-		name = group.getHuman(1).getName();
-		age = group.getHuman(1).getAge();
+		// ?
 	}
 	
 	public String returnMessage;
@@ -33,10 +34,11 @@ public class GroupSearchSteps {
 		returnMessage = group.removeHuman(rAge, rName);
 	}
 	
+	@Test
 	@Akkor("visszakapom a nevét és életkorát")
 	public void getNameAndAge() {
-		assertEquals(name, group.getHuman(1).getName());
-		assertEquals(age, group.getHuman(1).getAge());
+		assertEquals("Joe", group.getHuman(1).getName());
+		assertEquals(18, group.getHuman(1).getAge());
 	}
 	
 	@Akkor("kiírja, hogy: {string}")

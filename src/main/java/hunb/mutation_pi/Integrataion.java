@@ -21,7 +21,7 @@ public class Integrataion{
 	public Human getHuman(int id) {
 		if (id < 5 && id > -1) {
 			return humanList.get(id);
-		} 
+		}
 		return humanList.get(0);
 	}
 	
@@ -42,6 +42,10 @@ public class Integrataion{
 	
 	public int getSize() {
 		return humanList.size();
+	}
+	
+	public String sampleGroupMessage(int i) {
+		return new SampleController2().message(i);
 	}
 	
 }

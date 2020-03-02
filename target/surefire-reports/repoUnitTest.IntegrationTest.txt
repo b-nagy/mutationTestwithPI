@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: hunb.mutation_pi.HumanTest
+Test set: repoUnitTest.IntegrationTest
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in hunb.mutation_pi.HumanTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in repoUnitTest.IntegrationTest

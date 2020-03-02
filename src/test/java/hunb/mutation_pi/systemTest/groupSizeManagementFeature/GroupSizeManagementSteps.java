@@ -5,10 +5,13 @@ import io.cucumber.java.hu.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.Test;
+
 public class GroupSizeManagementSteps {
 
 	Integrataion group;
 	
+	@Test
 	@Adott("egy üres csoport")
 	public void newEmptyGroup() {
 		group = new Integrataion();
