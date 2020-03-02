@@ -6,7 +6,7 @@
     <property name="java.specification.version" value="12"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1250"/>
-    <property name="java.class.path" value="C:\Users\nagyb2\eclipse-workspace\mutation_pi\target\test-classes;C:\Users\nagyb2\eclipse-workspace\mutation_pi\target\classes;C:\Users\nagyb2\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.5.2\junit-jupiter-engine-5.5.2.jar;C:\Users\nagyb2\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-engine\1.5.2\junit-platform-engine-1.5.2.jar;C:\Users\nagyb2\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-commons\1.5.2\junit-platform-commons-1.5.2.jar;C:\Users\nagyb2\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.5.2\junit-jupiter-api-5.5.2.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-runner\1.5.2\junit-platform-runner-1.5.2.jar;C:\Users\nagyb2\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\nagyb2\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-launcher\1.5.2\junit-platform-launcher-1.5.2.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-suite-api\1.5.2\junit-platform-suite-api-1.5.2.jar;"/>
+    <property name="java.class.path" value="C:\Users\nagyb2\eclipse-workspace\mutation_pi\mutationTestwithPI\target\test-classes;C:\Users\nagyb2\eclipse-workspace\mutation_pi\mutationTestwithPI\target\classes;C:\Users\nagyb2\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.5.2\junit-jupiter-engine-5.5.2.jar;C:\Users\nagyb2\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-engine\1.5.2\junit-platform-engine-1.5.2.jar;C:\Users\nagyb2\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-commons\1.5.2\junit-platform-commons-1.5.2.jar;C:\Users\nagyb2\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.5.2\junit-jupiter-api-5.5.2.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-runner\1.5.2\junit-platform-runner-1.5.2.jar;C:\Users\nagyb2\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\nagyb2\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-launcher\1.5.2\junit-platform-launcher-1.5.2.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-suite-api\1.5.2\junit-platform-suite-api-1.5.2.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -17,9 +17,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="HU"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-12.0.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\nagyb2\AppData\Local\Temp\surefire15004267003543116476\surefirebooter8616598257329265207.jar C:\Users\nagyb2\AppData\Local\Temp\surefire15004267003543116476 2020-02-28T09-50-54_353-jvmRun1 surefire4101747923049278296tmp surefire_012439900692479081345tmp"/>
+    <property name="sun.java.command" value="C:\Users\nagyb2\AppData\Local\Temp\surefire6256278762895037074\surefirebooter4544490981339884564.jar C:\Users\nagyb2\AppData\Local\Temp\surefire6256278762895037074 2020-03-02T08-48-35_299-jvmRun1 surefire8976225780975088505tmp surefire_012574872916330254702tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\nagyb2\eclipse-workspace\mutation_pi\target\test-classes;C:\Users\nagyb2\eclipse-workspace\mutation_pi\target\classes;C:\Users\nagyb2\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.5.2\junit-jupiter-engine-5.5.2.jar;C:\Users\nagyb2\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-engine\1.5.2\junit-platform-engine-1.5.2.jar;C:\Users\nagyb2\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-commons\1.5.2\junit-platform-commons-1.5.2.jar;C:\Users\nagyb2\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.5.2\junit-jupiter-api-5.5.2.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-runner\1.5.2\junit-platform-runner-1.5.2.jar;C:\Users\nagyb2\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\nagyb2\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-launcher\1.5.2\junit-platform-launcher-1.5.2.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-suite-api\1.5.2\junit-platform-suite-api-1.5.2.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\nagyb2\eclipse-workspace\mutation_pi\mutationTestwithPI\target\test-classes;C:\Users\nagyb2\eclipse-workspace\mutation_pi\mutationTestwithPI\target\classes;C:\Users\nagyb2\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.5.2\junit-jupiter-engine-5.5.2.jar;C:\Users\nagyb2\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-engine\1.5.2\junit-platform-engine-1.5.2.jar;C:\Users\nagyb2\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-commons\1.5.2\junit-platform-commons-1.5.2.jar;C:\Users\nagyb2\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.5.2\junit-jupiter-api-5.5.2.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-runner\1.5.2\junit-platform-runner-1.5.2.jar;C:\Users\nagyb2\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\nagyb2\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-launcher\1.5.2\junit-platform-launcher-1.5.2.jar;C:\Users\nagyb2\.m2\repository\org\junit\platform\junit-platform-suite-api\1.5.2\junit-platform-suite-api-1.5.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\nagyb2"/>
     <property name="user.language" value="hu"/>
@@ -27,13 +27,13 @@
     <property name="java.version.date" value="2019-04-16"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-12.0.1"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\nagyb2\eclipse-workspace\mutation_pi"/>
+    <property name="basedir" value="C:\Users\nagyb2\eclipse-workspace\mutation_pi\mutationTestwithPI"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\nagyb2\AppData\Local\Temp\surefire15004267003543116476\surefirebooter8616598257329265207.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\nagyb2\AppData\Local\Temp\surefire6256278762895037074\surefirebooter4544490981339884564.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="12.0.1+12"/>
@@ -47,7 +47,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\nagyb2\AppData\Local\Temp\"/>
     <property name="java.version" value="12.0.1"/>
-    <property name="user.dir" value="C:\Users\nagyb2\eclipse-workspace\mutation_pi"/>
+    <property name="user.dir" value="C:\Users\nagyb2\eclipse-workspace\mutation_pi\mutationTestwithPI"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
@@ -58,6 +58,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="56.0"/>
   </properties>
-  <testcase name="sayGoodBye1" classname="hunb.mutation_pi.SampleController2Test" time="0.001"/>
+  <testcase name="sayGoodBye1" classname="hunb.mutation_pi.SampleController2Test" time="0"/>
   <testcase name="sayHello1" classname="hunb.mutation_pi.SampleController2Test" time="0"/>
 </testsuite>

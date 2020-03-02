@@ -7,12 +7,72 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class IntegrationTest {
 	
-	@DisplayName("new Human with SampleController")
+	Integrataion group = new Integrataion();
+	
+	@DisplayName("Human attribution check")
+	@Test
+	public void newAttributionCheck() {
+		assertEquals(0, group.clearGroup());
+		assertEquals("The group size is: 1", group.newHuman(2, 0, "Wiki"));
+		assertEquals(group.getHuman(0).getAge(), 2);
+		assertEquals(group.getHuman(0).getName(), "Wiki");
+		assertEquals("Yes, i'm!", group.getHuman(0).greeting("Wiki?"));
+		assertEquals("Yes, sir!", group.getHuman(0).greeting("Wiki!"));
+		assertEquals("I'm a child.", group.getHuman(0).howOldAreYou());
+	}
+	
+	@DisplayName("Human add to group")
 	@Test
 	public void newHumanWithSampleController() {
-		Integrataion integ = new Integrataion();
-		Human testHuman = integ.newHuman(2, 0);
-		assertEquals(testHuman.getAge(), 2);
+		assertEquals(0, group.clearGroup());
+		assertEquals("The group size is: 1", group.newHuman(2, 0, "Wiki"));
 	}
 
+	@DisplayName("Human remove from group")
+	@Test
+	public void removeHuman() {
+		assertEquals(0, group.clearGroup());
+		assertEquals("The group size is: 1", group.newHuman(2, 0, "Wiki"));
+		assertEquals("Wiki:2 removed from group", group.removeHuman(2, "Wiki"));
+	}
+	
+	@DisplayName("Human group is full")
+	@Test
+	public void groupIsFull() {
+		assertEquals(0, group.clearGroup());
+		for (int i = 0; i < 5; i++) { assertEquals("The group size is: " + (i+1), group.newHuman(2, 0, "Wiki")); }
+		assertEquals("The group is full", group.newHuman(2, 0, "Wiki"));
+	}
+	
+	@DisplayName("Invalid get human")
+	@Test
+	public void invalidGetHuman() {
+		assertEquals(0, group.clearGroup());
+		assertEquals("The group size is: 1", group.newHuman(2, 0, "Wiki"));
+		assertEquals(group.getHuman(0), group.getHuman(5));
+		assertEquals(group.getHuman(0), group.getHuman(-1));
+	}
+	
+	@DisplayName("isNotInTheGroup")
+	@Test
+	public void isNotInTheGroup() {
+		assertEquals("Adam:10 is not in the group", group.removeHuman(10, "Adam"));
+	}
+	
+	@DisplayName("clear group")
+	@Test
+	public void clearGroup() {
+		assertEquals("The group size is: 1", group.newHuman(2, 0, "Wiki"));
+		assertEquals(0, group.clearGroup());
+	}
+	
+	@DisplayName("get group size")
+	@Test
+	public void getGroupSize() {
+		group.clearGroup();
+		assertEquals(0, group.getSize());
+		group.newHuman(2, 0, "Wiki");
+		assertEquals(1, group.getSize());
+	}
+	
 }
