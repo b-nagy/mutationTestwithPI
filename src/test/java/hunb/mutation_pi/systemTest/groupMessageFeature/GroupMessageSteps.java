@@ -15,29 +15,28 @@ public class GroupMessageSteps {
 	Group group;
 	
 	@BeforeEach
-	@Adott("egy csoport")
+	@Adott("van egy csoport")
 	public void newGroup() {
 		group = new Group();
 	}
 	
-	public String message;
-	@Amennyiben("a maradékos osztás értéke: {int}")
-	public void groupMessage(int m) {
-		message = group.sampleGroupMessage(m);
-	}
-	
-	@Akkor("a csoport válasza: {string}")
-	public void groupMessageValidate(String expectedMessage) {
-		assertEquals(expectedMessage, message);
-	}
-	
 	@ParameterizedTest
 	@CsvSource({
-		"HELLO!,	0",
-		"GOOD BYE!,	1"
+		"0,	HELLO!",
+		"1,	GOOD BYE!"
 	})
-	public void groupMessage(String message, int i) {
-		//group = new Integrataion();
-		assertEquals(message, group.sampleGroupMessage(i));
+	@Amikor("a : {int}, b: {string}") 
+	public void groupMessage(int m, String message) {
+		assertEquals(message, group.sampleGroupMessage(m));
 	}
+	
+//	@ParameterizedTest
+//	@CsvSource({
+//		"HELLO!,	0",
+//		"GOOD BYE!,	1"
+//	})
+//	public void groupMessage(String message, int i) {
+//		//group = new Integrataion();
+//		assertEquals(message, group.sampleGroupMessage(i));
+//	}
 }
