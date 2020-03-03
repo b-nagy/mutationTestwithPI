@@ -15,7 +15,7 @@ public class GroupMessageSteps {
 	Group group;
 	
 	@BeforeEach
-	@Adott("van egy csoport")
+	@Adott("egy csoport")
 	public void newGroup() {
 		group = new Group();
 	}
@@ -25,7 +25,7 @@ public class GroupMessageSteps {
 		"0,	HELLO!",
 		"1,	GOOD BYE!"
 	})
-	@Amikor("a : {int}, b: {string}") 
+	@Amennyiben("a csoport megszólítása {int}, a csoport válasza: {string}") 
 	public void groupMessage(int m, String message) {
 		assertEquals(message, group.sampleGroupMessage(m));
 	}

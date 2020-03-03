@@ -3,10 +3,10 @@
 Jellemző: Csoport üzenetek
 
 	Forgatókönyv: Köszönés
-		Adott van egy csoport
-		Amikor a : 0, b: "HELLO!"
+		Adott egy csoport
+		Amennyiben a csoport megszólítása 0, a csoport válasza: "HELLO!"
 		
 	Forgatókönyv: elköszönés
-		Adott van egy csoport
-		Amikor a : 1, b: "GOOD BYE!"
+		Adott egy csoport
+		Amennyiben a csoport megszólítása 1, a csoport válasza: "GOOD BYE!"
 		
