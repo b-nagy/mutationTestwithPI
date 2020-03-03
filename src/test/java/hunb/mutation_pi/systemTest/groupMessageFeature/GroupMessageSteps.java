@@ -7,6 +7,8 @@ import io.cucumber.java.hu.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 public class GroupMessageSteps {
 
@@ -29,10 +31,13 @@ public class GroupMessageSteps {
 		assertEquals(expectedMessage, message);
 	}
 	
-	@Test
-	public void groupMessage() {
+	@ParameterizedTest
+	@CsvSource({
+		"HELLO!,	0",
+		"GOOD BYE!,	1"
+	})
+	public void groupMessage(String message, int i) {
 		//group = new Integrataion();
-		assertEquals("HELLO!", group.sampleGroupMessage(0));
-		assertEquals("GOOD BYE!", group.sampleGroupMessage(1));
+		assertEquals(message, group.sampleGroupMessage(i));
 	}
 }
