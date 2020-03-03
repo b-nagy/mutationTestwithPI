@@ -1,6 +1,6 @@
 package hunb.mutation_pi.systemTest.groupMessageFeature;
 
-import hunb.mutation_pi.Integrataion;
+import hunb.mutation_pi.Group;
 
 import io.cucumber.java.hu.*;
 
@@ -10,12 +10,12 @@ import org.junit.jupiter.api.*;
 
 public class GroupMessageSteps {
 
-	Integrataion group;
+	Group group;
 	
 	@BeforeEach
 	@Adott("egy csoport")
 	public void newGroup() {
-		group = new Integrataion();
+		group = new Group();
 	}
 	
 	public String message;

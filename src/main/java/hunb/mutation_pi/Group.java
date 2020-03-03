@@ -3,7 +3,7 @@ package hunb.mutation_pi;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Integrataion{
+public class Group{
 
 	private List<Human> humanList = new ArrayList<>();
 	

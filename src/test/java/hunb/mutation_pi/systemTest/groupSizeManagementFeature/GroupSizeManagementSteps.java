@@ -1,6 +1,6 @@
 package hunb.mutation_pi.systemTest.groupSizeManagementFeature;
 
-import hunb.mutation_pi.Integrataion;
+import hunb.mutation_pi.Group;
 import io.cucumber.java.hu.*;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -9,12 +9,12 @@ import org.junit.jupiter.api.Test;
 
 public class GroupSizeManagementSteps {
 
-	Integrataion group;
+	Group group;
 	
 	@Test
 	@Adott("egy üres csoport")
 	public void newEmptyGroup() {
-		group = new Integrataion();
+		group = new Group();
 		assertEquals(0, group.getSize());
 	}
 	
@@ -25,7 +25,7 @@ public class GroupSizeManagementSteps {
 	
 	@Adott("egy három fős csoport")
 	public void newGroupWithThreePerson() {
-		group = new Integrataion();
+		group = new Group();
 		assertEquals("The group size is: 1", group.newHuman(16, 0, "Wiki"));
 		assertEquals("The group size is: 2", group.newHuman(18, 0, "Joe"));
 		assertEquals("The group size is: 3", group.newHuman(14, 0, "Adam"));

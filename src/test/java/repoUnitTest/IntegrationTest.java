@@ -4,13 +4,13 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import hunb.mutation_pi.Human;
-import hunb.mutation_pi.Integrataion;
+import hunb.mutation_pi.Group;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class IntegrationTest {
 	
-	Integrataion group = new Integrataion();
+	Group group = new Group();
 	
 	@DisplayName("Human attribution check")
 	@Test
