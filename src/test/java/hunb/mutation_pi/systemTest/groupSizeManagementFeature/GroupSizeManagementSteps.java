@@ -5,24 +5,27 @@ import io.cucumber.java.hu.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class GroupSizeManagementSteps {
 
 	Group group;
 	
-	@Test
+	@BeforeEach
 	@Adott("egy üres csoport")
 	public void newEmptyGroup() {
 		group = new Group();
 		assertEquals(0, group.getSize());
 	}
 	
+	@Test
 	@Amennyiben("hozzáadok egy főt")
 	public void addOnePersonToTheGroup() {
 		assertEquals("The group size is: 1", group.newHuman(16, 0, "Wiki"));
 	}
 	
+	@Test
 	@Adott("egy három fős csoport")
 	public void newGroupWithThreePerson() {
 		group = new Group();
@@ -36,6 +39,7 @@ public class GroupSizeManagementSteps {
 		assertEquals("Adam:14 removed from group", group.removeHuman(14, "Adam"));
 	}
 	
+	@Test
 	@Amennyiben("a csoportot kiürítem")
 	public void removeAllPersonFromTheGroup() {
 		assertEquals(0, group.clearGroup());
@@ -46,6 +50,7 @@ public class GroupSizeManagementSteps {
 		for (int i = 0; i < 5; i++) 
 			assertEquals("The group size is: " + (i+1), group.newHuman(2, 0, "Wiki"));
 	}
+	
 	
 	@Akkor("a hatodik fő hozzáadásánál hibaüzenetet kapok")
 	public void maximumLimitValidation() {

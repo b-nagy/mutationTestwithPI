@@ -26,8 +26,8 @@ public class Group{
 	}
 	
 	public String removeHuman(int age, String name) {
-		for (int i = 0; i < humanList.size(); i++) {
-			if (humanList.get(i).getAge() == age && humanList.get(i).getName().equals(name)) {
+		for(Human i : humanList) {
+			if (i.getAge() == age && i.getName().equals(name)) {
 				humanList.remove(i);
 				return name + ":" + age + " removed from group";
 			}

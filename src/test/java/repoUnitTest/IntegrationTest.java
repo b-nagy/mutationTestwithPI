@@ -2,8 +2,11 @@ package repoUnitTest;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 import hunb.mutation_pi.Human;
+import io.cucumber.java.hu.Amennyiben;
 import hunb.mutation_pi.Group;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -76,6 +79,16 @@ public class IntegrationTest {
 		assertEquals(0, group.getSize());
 		group.newHuman(2, 0, "Wiki");
 		assertEquals(1, group.getSize());
+	}
+	
+	@DisplayName("Group Message")
+	@ParameterizedTest
+	@CsvSource({
+		"0,	HELLO!",
+		"1,	GOOD BYE!"
+	})
+	public void groupMessage(int m, String message) {
+		assertEquals(message, group.sampleGroupMessage(m));
 	}
 	
 }

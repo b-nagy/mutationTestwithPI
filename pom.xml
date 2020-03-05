@@ -58,7 +58,7 @@
                         <param>hunb.mutation_pi.*</param>
                     </targetClasses>
                     <targetTests>
-                        <param>hunb.mutation_pi.*</param>
+                        <param>repoUnitTest.*</param>
                     </targetTests>
                 </configuration>
             </plugin>

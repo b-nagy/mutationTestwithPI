@@ -29,14 +29,4 @@ public class GroupMessageSteps {
 	public void groupMessage(int m, String message) {
 		assertEquals(message, group.sampleGroupMessage(m));
 	}
-	
-//	@ParameterizedTest
-//	@CsvSource({
-//		"HELLO!,	0",
-//		"GOOD BYE!,	1"
-//	})
-//	public void groupMessage(String message, int i) {
-//		//group = new Integrataion();
-//		assertEquals(message, group.sampleGroupMessage(i));
-//	}
 }
