@@ -70,7 +70,7 @@ formatter.step({
   "keyword": "Adott "
 });
 formatter.match({
-  "location": "hunb.mutation_pi.systemTest.groupSearchFeature.GroupSearchSteps.newGroupWithThreePerson()"
+  "location": "hunb.mutation_pi.systemTest.groupSearchFeature.GroupSearchSteps.newGroupWithFivePerson()"
 });
 formatter.result({
   "status": "passed"
@@ -105,7 +105,7 @@ formatter.step({
   "keyword": "Adott "
 });
 formatter.match({
-  "location": "hunb.mutation_pi.systemTest.groupSearchFeature.GroupSearchSteps.newGroupWithThreePerson()"
+  "location": "hunb.mutation_pi.systemTest.groupSearchFeature.GroupSearchSteps.newGroupWithFivePerson()"
 });
 formatter.result({
   "status": "passed"
@@ -140,7 +140,7 @@ formatter.step({
   "keyword": "Adott "
 });
 formatter.match({
-  "location": "hunb.mutation_pi.systemTest.groupSearchFeature.GroupSearchSteps.newGroupWithThreePerson()"
+  "location": "hunb.mutation_pi.systemTest.groupSearchFeature.GroupSearchSteps.newGroupWithFivePerson()"
 });
 formatter.result({
   "status": "passed"

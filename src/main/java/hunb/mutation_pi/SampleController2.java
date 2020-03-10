@@ -2,13 +2,10 @@ package hunb.mutation_pi;
 
 public class SampleController2 {
 
-	public String message(int a) {
-		
-		String returnMessage = "";
-		
-		returnMessage = ( (a % 2) == 0 ) ?  "HELLO!" : "GOOD BYE!";
-		
-		return returnMessage;
-		
+	public SampleController2() {
+	}
+	
+	public String message(int a) { 
+		return ( (a % 2) == 0 ) ?  "HELLO!" : "GOOD BYE!";
 	}
 }

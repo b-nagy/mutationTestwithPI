@@ -3,13 +3,13 @@ package repoUnitTest;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import hunb.mutation_pi.Human;
+import hunb.mutation_pi.Person;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class HumanTest {
+public class PersonTest {
 
-	Human Viki = new Human(12, "Viki");
+	Person Viki = new Person(12, "Viki");
 	
 	@DisplayName("Add human: Viki, 12")
 	@Test

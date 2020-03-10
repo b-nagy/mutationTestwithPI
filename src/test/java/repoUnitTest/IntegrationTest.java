@@ -5,12 +5,11 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
-import hunb.mutation_pi.Human;
-import io.cucumber.java.hu.Amennyiben;
 import hunb.mutation_pi.Group;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@DisplayName("Group TestSuite")
 public class IntegrationTest {
 	
 	Group group = new Group();

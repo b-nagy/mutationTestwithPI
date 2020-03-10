@@ -1,11 +1,11 @@
 package hunb.mutation_pi;
 
-public class Human {
+public class Person {
 
 	private int age;
 	private String name;
 	
-	public Human(int age, String name) {
+	public Person(int age, String name) {
 		this.age = age;
 		this.name = name;
 	}

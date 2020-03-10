@@ -5,20 +5,20 @@ import java.util.List;
 
 public class Group{
 
-	private List<Human> humanList = new ArrayList<>();
+	private List<Person> humanList = new ArrayList<>();
 	
 	public String newHuman(int a, int b, String name) {	
 		
 		int age = new SampleController().sampleLogic(a, b);
 		
 		if(humanList.size() < 5) {
-			humanList.add(new Human(age, name));
+			humanList.add(new Person(age, name));
 			return "The group size is: " + humanList.size();
 		}
 		return "The group is full";
 	}
 	
-	public Human getHuman(int id) {
+	public Person getHuman(int id) {
 		if (id < 5 && id > -1) {
 			return humanList.get(id);
 		}
@@ -26,12 +26,12 @@ public class Group{
 	}
 	
 	public String removeHuman(int age, String name) {
-		for(Human i : humanList) {
+		for(Person i : humanList) 
 			if (i.getAge() == age && i.getName().equals(name)) {
 				humanList.remove(i);
 				return name + ":" + age + " removed from group";
 			}
-		}
+		
 		return name + ":" + age + " is not in the group";
 	}
 	

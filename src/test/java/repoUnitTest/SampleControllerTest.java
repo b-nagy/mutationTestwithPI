@@ -50,10 +50,4 @@ public class SampleControllerTest {
 	public void zeroResult2() {
 		assertEquals(0, new SampleController().sampleLogic(1, -1));
 	}
-	
-	@DisplayName("what is the 8. ?")
-	@Test
-	public void guess() {
-		assertEquals(1, new SampleController().sampleLogic(0, -1));
-	}
 }

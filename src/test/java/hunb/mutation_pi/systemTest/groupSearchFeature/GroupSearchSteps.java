@@ -12,9 +12,8 @@ public class GroupSearchSteps {
 	Group group;
 	
 	@BeforeEach
-	@Test
 	@Adott("egy öt fős csoport")
-	public void newGroupWithThreePerson() {
+	public void newGroupWithFivePerson() {
 		group = new Group();
 		assertEquals("The group size is: 1", group.newHuman(16, 0, "Wiki"));
 		assertEquals("The group size is: 2", group.newHuman(18, 0, "Joe"));
