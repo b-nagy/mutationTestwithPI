@@ -10,7 +10,7 @@ import hunb.mutation_pi.Group;
 import static org.junit.jupiter.api.Assertions.*;
 
 @DisplayName("Group TestSuite")
-public class IntegrationTest {
+public class GroupTest {
 	
 	Group group = new Group();
 	

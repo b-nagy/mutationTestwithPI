@@ -1,8 +1,8 @@
+repoUnitTest\GroupTest.class
 hunb\mutation_pi\systemTest\groupSearchFeature\GroupSearchSteps.class
+repoUnitTest\PersonTest.class
 hunb\mutation_pi\systemTest\groupMessageFeature\GroupMessageSteps.class
-repoUnitTest\SampleController2Test.class
-repoUnitTest\HumanTest.class
+repoUnitTest\GroupMessageTest.class
 repoUnitTest\SampleControllerTest.class
-repoUnitTest\IntegrationTest.class
 hunb\mutation_pi\systemTest\groupSizeManagementFeature\GroupSizeManagementSteps.class
 hunb\mutation_pi\systemTest\TestRun.class

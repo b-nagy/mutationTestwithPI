@@ -27,12 +27,12 @@ public class Person {
 	}
 	
 	public String howOldAreYou() {	
-		if(age < 0 ) { return "I was not born.";}
-		if(age == 0 ) { return "I'm now being born.";}
-		if(age <= 11 && age >= 1) { return "I'm a child."; }
-		if(age <= 17 && age >= 12) { return "I'm a young."; }
-		if(age <= 39 && age >= 18) { return "I'm middle aged."; }
-		if(age <= 59 && age >= 40) { return "I'm old."; }
+		if(age < 0 ) return "I was not born.";
+		if(age == 0 ) return "I'm now being born.";
+		if(age <= 11 && age >= 1) return "I'm a child."; 
+		if(age <= 17 && age >= 12) return "I'm a young.";
+		if(age <= 39 && age >= 18) return "I'm middle aged."; 
+		if(age <= 59 && age >= 40) return "I'm old."; 
 		return "I'm older."; 	
 	}
 	
@@ -45,13 +45,11 @@ public class Person {
 				&& 
 				voice.contains(this.name)) ? "Hello!" : "no answer";
 		
-		if(backGreeting.equals("no answer")) {	
+		if(backGreeting.equals("no answer")) 
 			backGreeting = (voice.equals(this.name + "?")) ? "Yes, i'm!" : "no answer";
-		}
-		if(backGreeting.equals("no answer")) {
-			backGreeting = (voice.equals(this.name + "!")) ? "Yes, sir!" : "no answer";
-		}
 		
+		if(backGreeting.equals("no answer")) 
+			backGreeting = (voice.equals(this.name + "!")) ? "Yes, sir!" : "no answer";
 		
 		return backGreeting;
 	}
