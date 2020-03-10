@@ -45,7 +45,7 @@ public class Group{
 	}
 	
 	public String sampleGroupMessage(int i) {
-		return new SampleController2().message(i);
+		return new GroupMessage().greeting(i);
 	}
 	
 }

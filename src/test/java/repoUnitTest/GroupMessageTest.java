@@ -5,21 +5,21 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
-import hunb.mutation_pi.SampleController2;
+import hunb.mutation_pi.GroupMessage;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.BeforeEach;
 
 @DisplayName("JUnit5 like BDD")
-public class SampleController2Test {
+public class GroupMessageTest {
 	
-	SampleController2 groupMesseage;
+	GroupMessage groupMesseage;
 	
 	@BeforeEach
 	@DisplayName("Adott a csoportos megszólítás kontroller")
 	public void prepare() {
-		groupMesseage = new SampleController2();
+		groupMesseage = new GroupMessage();
 	}
 	
 	@DisplayName("A megszólítástól függően HELLO!, vagy GOOD BYE! -al köszön vissza")
@@ -30,7 +30,7 @@ public class SampleController2Test {
 		"2,	HELLO!"
 	})
 	public void sayHello1(int inValue, String returnValue) {
-		assertEquals(returnValue, groupMesseage.message(inValue));
+		assertEquals(returnValue, groupMesseage.greeting(inValue));
 	}
 	
 //	@DisplayName("Say : GOOD BYE!")
