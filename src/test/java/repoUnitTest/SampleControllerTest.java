@@ -9,8 +9,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SampleControllerTest {
 
-/* vscode.dev */
-
 	@DisplayName("Test negative result 1")
 	@Test
 	public void negativeResult1() {
